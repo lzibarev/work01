@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbGetBrowserUserAgent" version="1.0.0000.001">
+
+	<name>dtbGetBrowserUserAgent</name>
+	<description>Returns the "user agent" (browser) being used by the client</description>
+	<content src="content/dtb/functions/getBrowser.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>All</categoryName>
+
+	<returnType isRepeating="false">STRING</returnType>
+	<params>
+	</params>
+</function>

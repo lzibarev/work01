@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbUnshiftBool" version="1.0.0000.001">
+
+	<name>dtbUnshiftBool</name>
+	<description>Adds an element to the beginning of an array</description>
+	<content src="content/dtb/functions/unshift.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>All</categoryName>
+
+	<returnType isRepeating="true">BOOLEAN</returnType>
+	<params>
+		<param name="element" required="true">
+			<type isRepeating="false">BOOLEAN</type>
+		</param>
+		<param name="array" required="true">
+			<type isRepeating="true">BOOLEAN</type>
+		</param>
+	</params>
+</function>

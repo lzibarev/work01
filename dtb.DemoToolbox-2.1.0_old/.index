@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Artifact:ArtifactIndexes xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Artifact="http://com.emc.xcp.builder/artifactmodel" urn="indexfile">
+  <indexes urn="urn:dtb:com.emc.xcp.artifact.javamodule.category:Artifacts/Java Modules/dtb-JavaServices.javamodule" categoryId="com.emc.xcp.artifact.javamodule.category" path="Artifacts/Java Modules/dtb-JavaServices.javamodule" label="DTb Java Services" name="dtb-JavaServices"/>
+</Artifact:ArtifactIndexes>

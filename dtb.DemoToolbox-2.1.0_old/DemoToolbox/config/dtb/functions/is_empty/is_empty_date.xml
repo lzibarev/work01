@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbIsEmptyDate" version="1.0.0000.001">
+
+	<name>dtbIsEmptyDate</name>
+	<description>Returns true if an empty value is provided</description>
+	<content src="content/dtb/functions/isEmpty.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>Date</categoryName>
+
+	<returnType isRepeating="false">BOOLEAN</returnType>
+	<params>
+		<param name="date" required="true">
+			<type isRepeating="false">DATETIME</type>
+		</param>
+	</params>
+</function>

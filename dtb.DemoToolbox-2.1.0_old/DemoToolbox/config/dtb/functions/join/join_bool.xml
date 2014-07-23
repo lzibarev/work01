@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbJoinBool" version="1.0.0000.001">
+
+	<name>dtbJoinBool</name>
+	<description>Joins an array into a string using a delimiter</description>
+	<content src="content/dtb/functions/join.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>All</categoryName>
+
+	<returnType isRepeating="false">STRING</returnType>
+	<params>
+		<param name="array" required="true">
+			<type isRepeating="true">BOOLEAN</type>
+		</param>
+		<param name="delimiter" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>
+	</params>
+</function>

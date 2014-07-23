@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbConvertBoolToStr" version="1.0.0000.001">
+
+	<name>dtbConvertBoolToStr</name>
+	<description>Converts a Boolean value to a string</description>
+	<content src="content/dtb/functions/convert.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>All</categoryName>
+
+	<returnType isRepeating="false">STRING</returnType>
+	<params>
+		<param name="bool" required="true">
+			<type isRepeating="false">BOOLEAN</type>
+		</param>
+	</params>
+</function>

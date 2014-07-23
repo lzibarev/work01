@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbSplitStrColumn" version="1.0.0000.001">
+
+	<name>dtbSplitStrColumn</name>
+	<description>Returns, as an array, the string column values in the selected row(s) of a results list enabled for multi-select</description>
+	<content src="content/dtb/functions/split.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>String</categoryName>
+
+	<returnType isRepeating="true">STRING</returnType>
+	<params>
+		<param name="stringColumn" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>
+	</params>
+</function>

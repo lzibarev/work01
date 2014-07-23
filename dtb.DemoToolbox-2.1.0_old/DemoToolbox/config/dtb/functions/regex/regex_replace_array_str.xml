@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbRegexReplaceArrayStr" version="1.0.0000.001">
+
+	<name>dtbRegexReplaceArrayStr</name>
+	<description>Performs a string replacement using a regular expression .</description>
+	<content src="content/dtb/functions/regex/regexReplaceArray.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>String</categoryName>
+
+	<returnType isRepeating="true">STRING</returnType>
+	<params>
+		<param name="strArray" required="true">
+			<type isRepeating="true">STRING</type>
+		</param>
+		<param name="pattern" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>
+		<param name="replacement" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>
+		<param name="modifiers" required="false">
+			<type isRepeating="false">STRING</type>
+		</param>
+	</params>
+</function>

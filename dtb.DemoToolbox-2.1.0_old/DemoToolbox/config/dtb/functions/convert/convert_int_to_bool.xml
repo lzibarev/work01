@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbConvertIntToBool" version="1.0.0000.001">
+
+	<name>dtbConvertIntToBool</name>
+	<description>Converts an integer value to a boolean</description>
+	<content src="content/dtb/functions/convert.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>All</categoryName>
+
+	<returnType isRepeating="false">BOOLEAN</returnType>
+	<params>
+		<param name="int" required="true">
+			<type isRepeating="false">INTEGER</type>
+		</param>
+	</params>
+</function>

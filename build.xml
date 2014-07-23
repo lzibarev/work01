@@ -1,0 +1,18 @@
+<project default="jar">
+
+	<target name="jar">
+		<jar destfile="jars/dtb.DemoToolbox-2.1.0.jar" basedir="dtb.DemoToolbox-2.1.0">
+			<manifest>
+				<attribute name="Component-Bundle" value="DemoToolbox" />
+				<attribute name="Bundle-Version" value="2.1.0" />
+				<attribute name="Bundle-Name" value="Demo Toolbox" />
+				<attribute name="Bundle-SymbolicName" value="dtb.DemoToolbox" />
+				<attribute name="NAMESPACE" value="dtb" />
+				<attribute name="EMC-XCP-ExecutionEnvironment" value="com.emc.executionenvironment.xcp:2.1.3" />
+				<attribute name="Built-By" value="burnec3" />
+				<attribute name="Require-Bundle" value='xcp.xcpcore;bundle-version="2.1.0", xcpcomm.xcpcommons;bundle-version="2.1.0", xcpui.xcpui;bundle-version="2.1.0"' />
+				<attribute name="Bundle-ManifestVersion" value="2" />
+			</manifest>
+		</jar>
+	</target>
+</project>

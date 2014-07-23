@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbTrim" version="1.0.0000.001">
+
+	<name>dtbTrim</name>
+	<description>Removes leading and/or trailing whitespace from a string</description>
+	<content src="content/dtb/functions/trim.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>String</categoryName>
+
+	<returnType isRepeating="false">STRING</returnType>
+	<params>
+		<param name="string" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>
+	</params>
+</function>

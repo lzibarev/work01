@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbIfElseStr" version="1.0.0000.001">
+
+	<name>dtbIfElseStr</name>
+	<description>Works as a tertiary operator</description>
+	<content src="content/dtb/functions/ifElse.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>String</categoryName>
+
+	<returnType isRepeating="false">STRING</returnType>
+	<params>
+		<param name="condition" required="true">
+			<type isRepeating="false">BOOLEAN</type>
+		</param>
+		<param name="trueVal" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>
+		<param name="falseVal" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>
+	</params>
+</function>

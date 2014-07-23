@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbArraySizeStr" version="1.0.0000.001">
+
+	<name>dtbArraySizeStr</name>
+	<description>Returns the number of elements in a supplied string array</description>
+	<content src="content/dtb/functions/arraySize.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>String</categoryName>
+
+	<returnType isRepeating="false">INTEGER</returnType>
+	<params>
+		<param name="strArray" required="true">
+			<type isRepeating="true">STRING</type>
+		</param>
+	</params>
+</function>

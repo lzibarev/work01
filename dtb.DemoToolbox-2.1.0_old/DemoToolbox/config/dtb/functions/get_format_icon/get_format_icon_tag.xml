@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbGetFormatIconTag" version="1.0.0000.001">
+
+	<name>dtbGetFormatIconTag</name>
+	<description>Returns the icon URL for a given format</description>
+	<content src="content/dtb/functions/getFormatIcon.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>String</categoryName>
+
+	<returnType isRepeating="false">STRING</returnType>
+	<params>
+		<param name="format" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>
+		<param name="size" required="true">
+			<type isRepeating="false">INTEGER</type>
+		</param>
+	</params>
+</function>

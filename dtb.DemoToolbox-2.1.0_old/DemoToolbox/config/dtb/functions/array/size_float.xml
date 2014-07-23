@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbArraySizeFloat" version="1.0.0000.001">
+
+	<name>dtbArraySizeFloat</name>
+	<description>Returns the number of elements in a supplied float array</description>
+	<content src="content/dtb/functions/arraySize.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>Numerical</categoryName>
+
+	<returnType isRepeating="false">INTEGER</returnType>
+	<params>
+		<param name="floatArray" required="true">
+			<type isRepeating="true">FLOAT</type>
+		</param>
+	</params>
+</function>

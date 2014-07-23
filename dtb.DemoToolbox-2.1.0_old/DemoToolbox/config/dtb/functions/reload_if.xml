@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbReloadIf" version="1.0.0000.001">
+
+	<name>dtbReloadIf</name>
+	<description>If the supplied condition is true, reload the current page</description>
+	<content src="content/dtb/functions/reload.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>All</categoryName>
+
+	<returnType isRepeating="false">BOOLEAN</returnType>
+	<params>
+		<param name="condition" required="true">
+			<type isRepeating="false">BOOLEAN</type>
+		</param>
+	</params>
+</function>

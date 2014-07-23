@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbGetBrowserQueryStringParam" version="1.0.0000.001">
+
+	<name>dtbGetBrowserQueryStringParam</name>
+	<description>Returns a specific parameter value of the URL's query string</description>
+	<content src="content/dtb/functions/getBrowser.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>All</categoryName>
+
+	<returnType isRepeating="false">STRING</returnType>
+	<params>
+		<param name="paramName" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>		
+	</params>
+</function>

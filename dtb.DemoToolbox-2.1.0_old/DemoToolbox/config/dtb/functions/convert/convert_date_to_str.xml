@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbConvertDateToStr" version="1.0.0000.001">
+
+	<name>dtbConvertDateToStr</name>
+	<description>Converts a date value to a string</description>
+	<content src="content/dtb/functions/convert.js" type="text/javascript"/>
+	<content src="js/moment.min.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>Date</categoryName>
+
+	<returnType isRepeating="false">STRING</returnType>
+	<params>
+		<param name="date" required="true">
+			<type isRepeating="false">DATETIME</type>
+		</param>
+		<param name="format" required="false">
+			<type isRepeating="false">STRING</type>
+		</param>
+	</params>
+</function>

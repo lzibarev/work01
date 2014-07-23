@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbSplitIntColumn" version="1.0.0000.001">
+
+	<name>dtbSplitIntColumn</name>
+	<description>Returns, as an array, the integer column values in the selected row(s) of a results list enabled for multi-select</description>
+	<content src="content/dtb/functions/split.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>Mathematical</categoryName>
+
+	<returnType isRepeating="true">INTEGER</returnType>
+	<params>
+		<param name="intColumn" required="true">
+			<type isRepeating="false">INTEGER</type>
+		</param>
+	</params>
+</function>

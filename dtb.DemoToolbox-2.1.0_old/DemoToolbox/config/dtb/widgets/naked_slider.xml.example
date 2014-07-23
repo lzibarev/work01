@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://documentum.emc.com/2010/UI-Model" xmlns:xcp="http://documentum.emc.com/xcp/2010"
+        id="dtb_naked_slider" xtype="dtb_naked_slider" 
+        version="1.0.0000.001">
+
+    <name>DTb Naked Slider</name>
+    <description>A very simple slider input control</description>
+    <author email="charles.burnett@emc.com">Charles Burnett</author>
+
+    <dependencies>
+        <dependency componentId="xcp_fixed_field_width_model_mixin"/>
+    </dependencies>
+    
+	<icon src="icons/16_wig.png" width="16" height="16"/>
+    <icon src="icons/24_wig.png" width="24" height="24"/>
+
+    <content src="content/dtb/widgets/NakedSlider.js" type="text/javascript"/>
+    <content src="content/dtb/widgets/designer/NakedSlider.js" type="text/javascript" mode="design"/>
+    
+    <category>xcpPalette:Custom</category>
+
+    <configuration>
+    	
+    	   <databound name="value">
+                                                <label>Value</label>
+            <type>EXPRESSION</type>
+            <expression>
+                <setterFunName>setValue</setterFunName>
+                <contextTree>
+                                <include>PRIMARY_CONTEXT</include>
+                                <include>APP_CONTEXT</include>
+                                <include>WIDGET_CONTEXT</include>
+                                <include>DATASOURCE_OUTPUT</include>
+                                <include>SINGLE_OBJECT_DATA_SERVICE_OUTPUT</include>
+                </contextTree>
+            </expression>
+        </databound>
+
+    			
+<propertyInfo name="valueType">
+                <label>Data type</label>
+            <type>STRING</type>
+            <defaultvalue>INTEGER</defaultvalue>
+        </propertyInfo>
+        
+            			
+        <propertyInfo name="fieldLabel" localizable="true">
+            <label>Label</label>
+            <type>STRING</type>
+            <constraint>
+	            <validator type="maxLength" maxLength="60"/>
+            </constraint>
+            <required>true</required>
+			<defaultvalue>Label</defaultvalue>
+        </propertyInfo>
+
+        <propertyInfo name="minValue" required="true">
+            <label>Minimum Value</label>
+            <description>The minimum value for the slider</description>
+	        <defaultvalue>0</defaultvalue>
+            <helptext/>
+            <type>INTEGER</type>
+            <displayConfig/>               
+        </propertyInfo>
+        
+        <propertyInfo name="maxValue" required="true">
+            <label>Maximum Value</label>
+            <description>The maximum value for the slider</description>
+	        <defaultvalue>100</defaultvalue>
+            <helptext/>
+            <type>INTEGER</type>
+            <displayConfig/>               
+        </propertyInfo>
+
+        <propertyInfo name="hstretch">
+            <type>BOOLEAN</type>
+            <defaultvalue>true</defaultvalue>
+        </propertyInfo>
+
+        <propertyInfo name="size">
+        	<label>Width</label>
+            <type>INTEGER</type>
+            <constraint>
+	            <validator type="inputDigitRange" lowerBound="1" upperBound="2048" lowerInclusive="true" upperInclusive="true"/>
+            </constraint>
+        </propertyInfo>
+        
+        <propertyInfo name="readOnly">
+            <label>Read-only when</label>
+            <type>EXPRESSION</type>
+            <expression>
+                <setterFunName>setReadOnly</setterFunName>
+                <contextTree>
+                    <include>PRIMARY_CONTEXT</include>
+                    <include>APP_CONTEXT</include>
+                    <include>WIDGET_CONTEXT</include>
+                </contextTree>
+            </expression>
+        </propertyInfo>
+        
+        <propertyInfo name="hidden">
+            <label>Hidden when</label>
+            <type>EXPRESSION</type>
+            <expression>
+                <setterFunName>setHidden</setterFunName>
+                <contextTree>
+                    <include>PRIMARY_CONTEXT</include>
+                    <include>APP_CONTEXT</include>
+                    <include>WIDGET_CONTEXT</include>
+                </contextTree>
+            </expression>
+        </propertyInfo>
+	</configuration>
+
+    <expressionProperties>
+        <propertyInfo name="value">
+            <label>Value</label>
+            <type>INTEGER</type>
+            <getterFun>
+                <name>this.getValueFromWidget</name>
+                <arguments>
+                    <argument>EVALUATION_CONTEXT</argument>
+                    <argument>WIDGET_ID</argument>
+                    <argument>PROPERTY_ID</argument>
+                </arguments>
+            </getterFun>
+            <changeEvents>
+                <eventInfo name="change"/>
+            </changeEvents>
+        </propertyInfo>
+    </expressionProperties>
+
+    <methods/>
+
+    <events/>
+
+</widget>

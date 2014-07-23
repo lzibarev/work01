@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbRedirectIf" version="1.0.0000.001">
+
+	<name>dtbRedirectIf</name>
+	<description>If the supplied condition is true, a page redirect is fired to a specified URL</description>
+	<content src="content/dtb/functions/redirect.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>All</categoryName>
+
+	<returnType isRepeating="false">STRING</returnType>
+	<params>
+		<param name="condition" required="true">
+			<type isRepeating="false">BOOLEAN</type>
+		</param>
+		<param name="url" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>
+	</params>
+</function>

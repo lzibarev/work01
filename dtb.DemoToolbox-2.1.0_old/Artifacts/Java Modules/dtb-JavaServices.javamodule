@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsJavaModule:JavaModule xmlns:nsJavaModule="http://xcp.emc.com/javamodule" urn="urn:dtb:com.emc.xcp.artifact.javamodule.category:Artifacts/Java Modules/dtb-JavaServices.javamodule" categoryId="com.emc.xcp.artifact.javamodule.category" name="dtb-JavaServices" label="DTb Java Services" implementationClass="com.emc.iig.dtb.DTbJavaServices">
+  <implementationJars contentPath="content/modules/dtb.JavaServices.jar"/>
+  <implementationJars contentPath="content/modules/prettytime-2.1.3.Final.jar"/>
+  <implementationJars contentPath="content/modules/ctsTransform.jar"/>
+  <implementationJars contentPath="content/modules/dam_services.jar"/>
+  <implementationJars contentPath="content/modules/commons-codec-1.8.jar"/>
+  <implementationJars contentPath="content/modules/commons-lang-2.6.jar"/>
+  <implementationJars contentPath="content/modules/commons-logging-1.1.3.jar"/>
+  <implementationJars contentPath="content/modules/ical4j-1.0.5.jar"/>
+  <implementationJars contentPath="content/modules/backport-util-concurrent-3.1.jar"/>
+</nsJavaModule:JavaModule>

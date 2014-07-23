@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbArraySizeDate" version="1.0.0000.001">
+
+	<name>dtbArraySizeDate</name>
+	<description>Returns the number of elements in a supplied date array</description>
+	<content src="content/dtb/functions/arraySize.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>Date</categoryName>
+
+	<returnType isRepeating="false">INTEGER</returnType>
+	<params>
+		<param name="dateArray" required="true">
+			<type isRepeating="true">DATETIME</type>
+		</param>
+	</params>
+</function>

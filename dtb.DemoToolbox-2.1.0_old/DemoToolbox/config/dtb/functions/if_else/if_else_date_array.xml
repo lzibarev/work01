@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbIfElseDateArray" version="1.0.0000.001">
+
+	<name>dtbIfElseDateArray</name>
+	<description>Works as a tertiary operator</description>
+	<content src="content/dtb/functions/ifElse.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>Date</categoryName>
+
+	<returnType isRepeating="true">DATETIME</returnType>
+	<params>
+		<param name="condition" required="true">
+			<type isRepeating="false">BOOLEAN</type>
+		</param>
+		<param name="trueVal" required="true">
+			<type isRepeating="true">DATETIME</type>
+		</param>
+		<param name="falseVal" required="true">
+			<type isRepeating="true">DATETIME</type>
+		</param>
+	</params>
+</function>

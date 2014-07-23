@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dtbConvertStrToFloat" version="1.0.0000.001">
+
+	<name>dtbConvertStrToFloat</name>
+	<description>Converts a string value to a float</description>
+	<content src="content/dtb/functions/convert.js" type="text/javascript"/>
+
+	<namespace>dtb.functions</namespace>
+	<categoryName>All</categoryName>
+
+	<returnType isRepeating="false">FLOAT</returnType>
+	<params>
+		<param name="str" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>
+	</params>
+</function>

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.4
+Created-By: 1.6.0_45-b06 (Sun Microsystems Inc.)
+Built-By: burnec3
+Component-Bundle: DemoToolbox
+Require-Bundle: xcp.xcpcore;bundle-version="2.1.0", xcpcomm.xcpcommons
+ ;bundle-version="2.1.0", xcpui.xcpui;bundle-version="2.1.0"
+Bundle-Version: 2.1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Demo Toolbox
+Bundle-SymbolicName: dtb.DemoToolbox
+NAMESPACE: dtb
+EMC-XCP-ExecutionEnvironment: com.emc.executionenvironment.xcp:2.1.3
+
