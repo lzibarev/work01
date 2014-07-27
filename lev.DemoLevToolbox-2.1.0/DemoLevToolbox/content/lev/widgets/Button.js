@@ -4,43 +4,62 @@ Ext.define("lev.widgets.Button", {
 	requires : [ 'Ext.selection.CellModel', 'Ext.grid.*', 'Ext.data.*',
 			'Ext.util.*', 'Ext.form.*' ],
 	xtype : 'cell-editing',
-	title : 'Edit Plants',
+	title: 'Настройка согласования',
 	frame : true,
 
-    store: Ext.create('Ext.data.Store', {
-        fields:['name', 'email', 'phone','test'],
-        data:{'items':[
-            { 'name': 'Lisa',  "email":"lisa@simpsons.com",  "phone":"555-111-1224" , "test": true },
-            { 'name': 'Bart',  "email":"bart@simpsons.com",  "phone":"555-222-1234", "test": false },
-            { 'name': 'Homer', "email":"homer@simpsons.com",  "phone":"555-222-1244" , "test": true },
-            { 'name': 'Marge', "email":"marge@simpsons.com", "phone":"555-222-1254", "test": false  }
-        ]},
-        proxy: {
-            type: 'memory',
-            reader: {
-                type: 'json',
-                rootProperty: 'items'
-            }
-        }
-    }),
+    store : Ext.create('Ext.data.Store', {
+		fields : [ 'number', 'code', 'dit', 'dt', 'techBlok', 'usingBranch' ],
+		data : {
+			'items' : [ {
+				'number' : '1',
+				"code" : "ПЗ-Пояснительная записка",
+				"dit" : true,
+				"dt" : false,
+				"techBlok" : true,
+				"usingBranch" : false
+			} ]
+		},
+		proxy : {
+			type : 'memory',
+			reader : {
+				type : 'json',
+				rootProperty : 'items'
+			}
+		}
+	}),
 	columns : [ {
-		text : 'Name',
-		dataIndex : 'name'
+		header : 'Номер',
+		width : 50,
+		dataIndex : 'number'
 	}, {
-		text : 'Email',
-		dataIndex : 'email',
+		header : 'Шифр',
+		dataIndex : 'code',
+		width : 200,
 		flex : 1
 	}, {
-		text : 'Phone',
-		dataIndex : 'phone'
+		xtype : 'checkcolumn',
+		header : 'ДИТ',
+		width : 100,
+		dataIndex : 'dit'
 	}, {
 		xtype : 'checkcolumn',
-		header : 'Indoor?',
-		width : 90,
-		dataIndex : 'test'
-	} ],
-	height : 200,
-	width : 400,
+		header : 'ДТЭ',
+		width : 100,
+		dataIndex : 'dt'
+	}, {
+		xtype : 'checkcolumn',
+		header : 'Тех. блок',
+		width : 100,
+		dataIndex : 'techBlok'
+	}, {
+		xtype : 'checkcolumn',
+		header : 'Эксп. филиал',
+		width : 100,
+		dataIndex : 'usingBranch'
+	} ],    
+	height: 250,
+    width: 700,
+
 	cellEditing : new Ext.grid.plugin.CellEditing({
 		clicksToEdit : 1
 	})
