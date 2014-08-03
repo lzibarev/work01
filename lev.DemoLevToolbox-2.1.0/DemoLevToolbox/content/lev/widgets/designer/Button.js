@@ -15,7 +15,7 @@ Ext.define('lev.widgets.designer.Button', {
 						"name": "general",
 						"sections": [{
 								"name" : "basic",
-								"properties": [{"name": "text"}, {"name": "iframe"}, {"name": "behavior"}, {"name": "debug"}]
+								"properties": [{"name": "title"}, {"name": "debug"}]
 							},
 							{
 								"name" : "url",
@@ -38,8 +38,8 @@ Ext.define('lev.widgets.designer.Button', {
 	},
 	updateComponent: function(propertiesJSONObject) {
 		//javaLog("xcp.widget.designer.Plaintext", "updateComponent", "log");
-        if (propertiesJSONObject && propertiesJSONObject.name === 'text') {
-		    this.cmp.setText(propertiesJSONObject.value);
+        if (propertiesJSONObject && propertiesJSONObject.name === 'title') {
+		    this.cmp.setTitle(propertiesJSONObject.value);
         }
 	}
 });

@@ -5,8 +5,8 @@
     <name>lev Button</name>
     <description>Lev</description>
 
-    <icon src="icons/button_wig.png" width="16" height="16" /> <!-- palette -->
-    <icon src="icons/button_24_wig.png" width="24" height="24" /> <!-- drag and drop -->
+    <icon src="icons/button_wig.png" width="16" height="16" />
+    <icon src="icons/button_24_wig.png" width="24" height="24" />
 
     <content src="content/lev/widgets/Button.js" type="text/javascript"/>
     <content src="content/lev/widgets/designer/Button.js" type="text/javascript" mode="design"/>
@@ -14,13 +14,12 @@
     <category>xcpPalette:Custom</category>
 
     <configuration>
-    
-        <propertyInfo name="text" localizable="true">
-            <label>Label</label>
+        <propertyInfo name="title" localizable="true">
+            <label>Title</label>
             <type>STRING</type>
-			<defaultvalue>Button</defaultvalue>
+			<defaultvalue>Настройка процесса согласования</defaultvalue>
 			<constraint>
-	            <validator type="maxLength" maxLength="60"/>
+	            <validator type="maxLength" maxLength="120"/>
             </constraint>
         </propertyInfo>
         
@@ -36,20 +35,6 @@
                 	<include>SINGLE_OBJECT_DATA_SERVICE_OUTPUT</include>
                 </contextTree>
             </expression>
-        </propertyInfo>
-        
-        <propertyInfo name="behavior">
-            <label>Open in new tab/window</label>
-            <description>Determines whether the destination page will open in a new window.</description>
-	        <defaultvalue>false</defaultvalue>
-            <helptext/>
-            <type>BOOLEAN</type>
-        </propertyInfo>
-        
-        <propertyInfo name="iframe">
-        	<label>Target IFrame</label>
-        	<description>If specified, the iframe with the specified ID will have its URL changed, rather than the parent window</description>
-        	<type>STRING</type>
         </propertyInfo>
         
         <propertyInfo name="debug">
