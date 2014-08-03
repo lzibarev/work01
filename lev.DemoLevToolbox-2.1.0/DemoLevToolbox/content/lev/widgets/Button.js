@@ -6,8 +6,8 @@ Ext.define("lev.widgets.Button", {
 			xtype: 'cell-editing',
 			title: 'Настройка согласования',
 		    frame: true,
-		    inputDataColumns: 'ДИТ,ДТЭ,Тех. блок,Эксп. филиал',
-		    inputDataStore: "1,ПЗ-Пояснительная записка,true,true,false,true;2,2-ПЗ-Пояснительная записка,false,true,true,true",
+		    inputDataColumns: 'ДИТ,ДТЭ,ТехБлок,ЭкспФилиал',
+		    inputDataStore: "ПЗ-Пояснительная записка,true,true,false,true;2-ПЗ-Пояснительная записка,false,true,true,true;3-ПЗ-Пояснительная записка,true,false,true,false",
 		    
 		    initComponent: function(){
 			    cNames = this.inputDataColumns.split(',');
@@ -15,8 +15,7 @@ Ext.define("lev.widgets.Button", {
 			    fields = ['number', 'code'];
 				modelFields = [
 				        {name: 'number',  type: 'string'},
-				        {name: 'code', type: 'string'},
-				        {name: 'ДИТ', type: 'boolean'},
+				        {name: 'code', type: 'string'}
 				    ];
 				storeData = [];
 				
@@ -33,16 +32,16 @@ Ext.define("lev.widgets.Button", {
 					fields.push(cName);
 					modelFields.push({name: cName, type: 'boolean'});
 			    }
-				for(j in rows){
+				for(j = 0; j < rows.length; j++){
 					row = rows[j];
 					rowFields = row.split(',');
 					console.log(rowFields);
-					storeRow = {'number': rowFields[0], 'code': rowFields[1]}
+					storeRow = {'number': j+1, 'code': rowFields[0]}
 					storeData.push(storeRow);
 					for(index = 0; index < cNames.length; index++){
 			    		tmpCount++;
 				    	cName = cNames[index];
-				    	storeRow[cName] = rowFields[2+index];//tmpCount%3===0;
+				    	storeRow[cName] = rowFields[1+index];
 			    	}
 			    	console.log(storeRow);
 				}
