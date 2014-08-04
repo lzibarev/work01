@@ -1,20 +1,15 @@
-/*
-		    inputDataColumns: 'ДИТ,ДТЭ,ТехБлок,ЭкспФилиал',
-	    	inputDataStore: "ПЗ-Пояснительная записка,true,true,false,true;2-ПЗ-Пояснительная записка,false,true,true,true;3-ПЗ-Пояснительная записка,true,false,true,false",
-
- */
 Ext.define("lev.widgets.Button", {
 	extend : "Ext.grid.Panel",
 	alias: "widget.lev_button",
 	requires : [ 'Ext.selection.CellModel', 'Ext.grid.*', 'Ext.data.*',
 			'Ext.util.*', 'Ext.form.*' ],
-		    xtype: 'cell-editing',
-		    inputDataColumns: 'ДИТ,ДТЭ,ТехБлок,ЭкспФилиал',
-	    	inputDataStore: "ПЗ-Пояснительная записка,true,true,false,true;2-ПЗ-Пояснительная записка,false,true,true,true;3-ПЗ-Пояснительная записка,true,false,true,false",
+			xtype: 'cell-editing',
 		    frame: true,
 		    debug: true,
+		    inputDataColumns: 'Col1',
+		    inputDataStore: "test,true",
+ 
 		    initComponent: function(){
-		    	this.height = 90;
 
 				this.setInputDataColumns(this.inputDataColumns);
 
@@ -63,16 +58,19 @@ Ext.define("lev.widgets.Button", {
 					fields.push(cName);
 					this.modelFields.push({name: cName, type: 'boolean'});
 			    }
+			    return true;
 		    },
 		    
 		    updateInputDataColumns: function(value){
 			    this.log("updateInputDataColumns value="+value);
-		    	this.setInputDataColumns(value);
-		    	newStore = Ext.create('Ext.data.Store', {
-					fields : this.modelFields,
-					data : []
-				});
-		    	this.reconfigure(newStore, this.columns);
+		    	if (this.inputDataColumns != value){
+		    		this.setInputDataColumns(value);
+			    	newStore = Ext.create('Ext.data.Store', {
+						fields : this.modelFields,
+						data : []
+					});
+		    		this.reconfigure(newStore, this.columns);
+		    	}
 		    },
 		    
 		    setInputDataStore: function(value){
@@ -82,6 +80,7 @@ Ext.define("lev.widgets.Button", {
 					return;
 				}	    
 			    this.store.removeAll();
+		    	this.height = 90;
 				rows = this.inputDataStore.split(';');
 				
 				for(j = 0; j < rows.length; j++){
@@ -103,10 +102,6 @@ Ext.define("lev.widgets.Button", {
 				}
 			    this.setHeight(this.height);
 		    },
-		    
-		    
-		    
-		    
 		    cellEditing: new Ext.grid.plugin.CellEditing({
 		            clicksToEdit: 1
 		    	}), 

@@ -22,6 +22,22 @@
 	            <validator type="maxLength" maxLength="120"/>
             </constraint>
         </propertyInfo>
+        <propertyInfo name="columns" localizable="true">
+            <label>Columns</label>
+            <type>STRING</type>
+			<defaultvalue>ДИТ,ДТЭ,ТехБлок,ЭкспФилиал</defaultvalue>
+			<constraint>
+	            <validator type="maxLength" maxLength="120"/>
+            </constraint>
+        </propertyInfo>
+        <propertyInfo name="store" localizable="true">
+            <label>Store</label>
+            <type>STRING</type>
+			<defaultvalue>test-1,true,true,false,true</defaultvalue>
+			<constraint>
+	            <validator type="maxLength" maxLength="1200"/>
+            </constraint>
+        </propertyInfo>
         
         <propertyInfo name="externalURL" required="true">
             <type>EXPRESSION</type>

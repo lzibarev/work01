@@ -15,7 +15,7 @@ Ext.define('lev.widgets.designer.Button', {
 						"name": "general",
 						"sections": [{
 								"name" : "basic",
-								"properties": [{"name": "title"}, {"name": "debug"}]
+								"properties": [{"name": "title"},{"name": "columns"},{"name": "store"}, {"name": "debug"}]
 							},
 							{
 								"name" : "url",
@@ -40,6 +40,12 @@ Ext.define('lev.widgets.designer.Button', {
 		//javaLog("xcp.widget.designer.Plaintext", "updateComponent", "log");
         if (propertiesJSONObject && propertiesJSONObject.name === 'title') {
 		    this.cmp.setTitle(propertiesJSONObject.value);
+        }
+        if (propertiesJSONObject && propertiesJSONObject.name === 'columns') {
+		    this.cmp.updateInputDataColumns(propertiesJSONObject.value);
+        }
+        if (propertiesJSONObject && propertiesJSONObject.name === 'store') {
+		    this.cmp.setInputDataStore(propertiesJSONObject.value);
         }
 	}
 });
