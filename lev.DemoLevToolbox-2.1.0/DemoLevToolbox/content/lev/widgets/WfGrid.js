@@ -1,6 +1,6 @@
-Ext.define("lev.widgets.Button", {
+Ext.define("lev.widgets.WfGrid", {
 	extend : "Ext.grid.Panel",
-	alias: "widget.lev_button",
+	alias: "widget.lev_wf_grid",
 	requires : [ 'Ext.selection.CellModel', 'Ext.grid.*', 'Ext.data.*',
 			'Ext.util.*', 'Ext.form.*' ],
 			xtype: 'cell-editing',

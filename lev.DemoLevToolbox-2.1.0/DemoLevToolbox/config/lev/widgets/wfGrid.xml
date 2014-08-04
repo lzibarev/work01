@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://documentum.emc.com/2010/UI-Model"
-        id="lev_button" xtype="lev_button" version="1.0.0000.001">
+        id="lev_wf_grid" xtype="lev_wf_grid" version="1.0.0000.001">
 
     <name>WF Grid</name>
     <description>Таблица конфигурации тех процесса</description>
 
-    <icon src="icons/button_wig.png" width="16" height="16" />
-    <icon src="icons/button_24_wig.png" width="24" height="24" />
+    <icon src="icons/wf_grid_wig.png" width="16" height="16" />
+    <icon src="icons/wf_grid_24_wig.png" width="24" height="24" />
 
-    <content src="content/lev/widgets/Button.js" type="text/javascript"/>
-    <content src="content/lev/widgets/designer/Button.js" type="text/javascript" mode="design"/>
+    <content src="content/lev/widgets/WfGrid.js" type="text/javascript"/>
+    <content src="content/lev/widgets/designer/WfGrid.js" type="text/javascript" mode="design"/>
 
     <category>xcpPalette:Custom</category>
 

@@ -1,14 +1,7 @@
-/**
- * @class lev.widgets.designer.Button
- * @extends xcp.designer.Component
- * Design time base component, wrapper runtime component.
- * @constructor Creates a new design-time Button
- * @param {cmp} runtime component.
- */
-Ext.define('lev.widgets.designer.Button', {
+Ext.define('lev.widgets.designer.WfGrid', {
 	extend: 'xcp.designer.Component',
 	constructor: function(cmp){
-		lev.widgets.designer.Button.superclass.constructor.call(this, cmp);
+		lev.widgets.designer.WfGrid.superclass.constructor.call(this, cmp);
 
 		this.propertyConfig = {
 				"tabs": [{
@@ -50,4 +43,4 @@ Ext.define('lev.widgets.designer.Button', {
 	}
 });
 
-xcp.designer.ComponentMgr.registerType("lev_button",lev.widgets.designer.Button);
+xcp.designer.ComponentMgr.registerType("lev_wf_grid",lev.widgets.designer.WfGrid);
