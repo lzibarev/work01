@@ -2,8 +2,8 @@
 <widget xmlns="http://documentum.emc.com/2010/UI-Model"
         id="lev_button" xtype="lev_button" version="1.0.0000.001">
 
-    <name>lev Button</name>
-    <description>Lev</description>
+    <name>WF Grid</name>
+    <description>Таблица конфигурации тех процесса</description>
 
     <icon src="icons/button_wig.png" width="16" height="16" />
     <icon src="icons/button_24_wig.png" width="24" height="24" />
@@ -30,19 +30,19 @@
 	            <validator type="maxLength" maxLength="120"/>
             </constraint>
         </propertyInfo>
-        <propertyInfo name="store" localizable="true">
-            <label>Store</label>
+        <propertyInfo name="storeTest" localizable="true">
+            <label>Store test</label>
             <type>STRING</type>
-			<defaultvalue>test-1,true,true,false,true</defaultvalue>
+			<defaultvalue>Шифр1,false,true,false,true</defaultvalue>
 			<constraint>
 	            <validator type="maxLength" maxLength="1200"/>
             </constraint>
         </propertyInfo>
         
-        <propertyInfo name="externalURL" required="true">
+        <propertyInfo name="store" required="true">
             <type>EXPRESSION</type>
             <expression>
-                <setterFunName>setValue</setterFunName>
+                <setterFunName>setInputDataStore</setterFunName>
                 <contextTree>
                     <include>PRIMARY_CONTEXT</include>
                 	<include>APP_CONTEXT</include>

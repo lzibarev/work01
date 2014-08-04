@@ -15,12 +15,12 @@ Ext.define('lev.widgets.designer.Button', {
 						"name": "general",
 						"sections": [{
 								"name" : "basic",
-								"properties": [{"name": "title"},{"name": "columns"},{"name": "store"}, {"name": "debug"}]
+								"properties": [{"name": "title"},{"name": "columns"},{"name": "storeTest"}, {"name": "debug"}]
 							},
 							{
-								"name" : "url",
-								"label": "URL",
-								"properties": [{"name": "externalURL"}]
+								"name" : "store",
+								"label": "STORE",
+								"properties": [{"name": "store"}]
 							}]
 					},
                     {
@@ -44,7 +44,7 @@ Ext.define('lev.widgets.designer.Button', {
         if (propertiesJSONObject && propertiesJSONObject.name === 'columns') {
 		    this.cmp.updateInputDataColumns(propertiesJSONObject.value);
         }
-        if (propertiesJSONObject && propertiesJSONObject.name === 'store') {
+        if (propertiesJSONObject && propertiesJSONObject.name === 'storeTest') {
 		    this.cmp.setInputDataStore(propertiesJSONObject.value);
         }
 	}

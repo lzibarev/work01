@@ -6,8 +6,8 @@ Ext.define("lev.widgets.Button", {
 			xtype: 'cell-editing',
 		    frame: true,
 		    debug: true,
-		    inputDataColumns: 'Col1',
-		    inputDataStore: "test,true",
+		    inputDataColumns: 'ДИТ,ДТЭ,ТехБлок,ЭкспФилиал',
+		    inputDataStore: "Шифр1,false,true,false,true",
  
 		    initComponent: function(){
 
@@ -70,6 +70,7 @@ Ext.define("lev.widgets.Button", {
 						data : []
 					});
 		    		this.reconfigure(newStore, this.columns);
+			    	this.setInputDataStore(this.inputDataStore);
 		    	}
 		    },
 		    
